@@ -60,14 +60,14 @@ eu_nights_spent_23 %>%
         panel.grid.major.x = element_line(colour = "grey97"),
         plot.title = element_text(colour = "#1c3d5a", face = "bold", size = 24),
         plot.subtitle = element_textbox_simple(colour = "#6d7b8d", size = 18,
-                                               margin = margin(t = 2.5, b = 15)),
+                                               margin = ggplot2::margin(t = 2.5, b = 15)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_markdown(colour = "#666666", size = 16, margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_markdown(colour = "#666666", size = 16, margin = ggplot2::margin(r = 5)),
         axis.ticks.y = element_line(colour = "grey97"),
         legend.position = "none",
-        plot.margin = margin(10, 10, 10, 10))
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 
@@ -120,15 +120,15 @@ tourists_can %>%
         panel.grid.major = element_line(colour = "grey97"),
         plot.title = element_text(colour = "#1c3d5a", face = "bold", size = 24),
         plot.subtitle = element_text(colour = "#6d7b8d", size = 18,
-                                     margin = margin(t = 2.5, b = 15)),
+                                     margin = ggplot2::margin(t = 2.5, b = 15)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 12),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(margin = ggplot2::margin(r = 5)),
         axis.ticks = element_line(colour = "grey97"),
         axis.title.y = element_text(size = 14, family = "Cabin", colour = "#555555",
-                                    margin = margin(r = 10)),
-        plot.margin = margin(10, 10, 10, 10))
+                                    margin = ggplot2::margin(r = 10)),
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 
@@ -169,14 +169,14 @@ tour_by_island_2024 %>%
         panel.grid.major.x = element_line(colour = "grey97"),
         plot.title = element_text(colour = "#1c3d5a", face = "bold", size = 24),
         plot.subtitle = element_textbox_simple(colour = "#6d7b8d", size = 18,
-                                     margin = margin(t = 2.5, b = 15)),
+                                     margin = ggplot2::margin(t = 2.5, b = 15)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(colour = "#666666", size = 16, margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(colour = "#666666", size = 16, margin = ggplot2::margin(r = 5)),
         axis.ticks.y = element_line(colour = "grey97"),
         legend.position = "none",
-        plot.margin = margin(10, 10, 10, 10))
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 # table
@@ -261,10 +261,10 @@ map <- can_map %>%
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(colour = "grey97"),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(margin = ggplot2::margin(r = 5)),
         legend.position = "none",
-        plot.margin = margin(10, 10, 10, 10))
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 #map
 
@@ -305,15 +305,15 @@ line_plot <- tourists_by_island %>%
   theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_line(colour = "grey97"),
         plot.subtitle = element_text(colour = "#6d7b8d", size = 16,
-                                     margin = margin(t = 2.5, b = 15)),
+                                     margin = ggplot2::margin(t = 2.5, b = 15)),
         axis.title.y = element_text(size = 14, family = "Cabin", colour = "#555555",
-                                    margin = margin(r = 10)),
+                                    margin = ggplot2::margin(r = 10)),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(margin = ggplot2::margin(r = 5)),
         axis.ticks.y = element_line(colour = "grey97"),
         legend.position = "none",
-        plot.margin = margin(10, 10, 10, 20))
+        plot.margin = ggplot2::margin(10, 10, 10, 20))
 
 #line_plot
 
@@ -351,13 +351,13 @@ bar_chart <- tourists_by_island %>%
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(colour = "grey97"),
         plot.subtitle = element_text(colour = "#6d7b8d", size = 16,
-                                     margin = margin(t = 2.5, b = 15)),
+                                     margin = ggplot2::margin(t = 2.5, b = 15)),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(colour = "#555555", size = 12, margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(colour = "#555555", size = 12, margin = ggplot2::margin(r = 5)),
         axis.ticks.y = element_line(colour = "grey97"),
         legend.position = "none",
-        plot.margin = margin(10, 10, 20, 10))
+        plot.margin = ggplot2::margin(10, 10, 20, 10))
 
 #bar_chart
 
@@ -368,7 +368,7 @@ yearly_per_island_plot <- (bar_chart + line_plot) / map +
                   caption = "Data: Instituto Canario de Estadística (ISTAC). | Made by Oliver Q.R.",
                   theme = theme(plot.title = element_text(colour = "#1c3d5a", face = "bold", size = 24, hjust = 0.5),
                                 plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
-                                plot.margin = margin(10, 10, 10, 10)))
+                                plot.margin = ggplot2::margin(10, 10, 10, 10)))
 
 
 interactive_plot <- girafe(ggobj = yearly_per_island_plot,
@@ -426,19 +426,19 @@ tourists_can %>%
         panel.grid.major = element_line(colour = "grey97"),
         plot.title = element_textbox_simple(colour = "#1c3d5a", face = "bold", size = 24),
         plot.subtitle = element_textbox_simple(colour = "#6d7b8d", size = 18,
-                                         margin = margin(t = 5, b = 12.5)),
+                                         margin = ggplot2::margin(t = 5, b = 12.5)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 11),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(colour = "#666666", size = 16, margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(colour = "#666666", size = 16, margin = ggplot2::margin(r = 5)),
         axis.title.x = element_text(colour = "#666666", family = "Cabin", face = "bold", size = 13,
-                                    margin = margin(t = 5)),
+                                    margin = ggplot2::margin(t = 5)),
         axis.ticks = element_line(colour = "grey97"),
         legend.position = "inside",
         legend.position.inside = c(0.95, 0.1),
         legend.background = element_rect(linewidth = 0.2, fill = "white"),
         legend.title = element_text(face = "bold", hjust = 0.5),
-        plot.margin = margin(10, 10, 10, 10))
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 
@@ -492,14 +492,14 @@ daily_exp %>%
         panel.grid.major = element_line(colour = "grey97"),
         plot.title = element_text(colour = "#1c3d5a", face = "bold", size = 24),
         plot.subtitle = element_textbox_simple(colour = "#6d7b8d", size = 18,
-                                     margin = margin(t = 2.5, b = 15)),
+                                     margin = ggplot2::margin(t = 2.5, b = 15)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 12),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(margin = ggplot2::margin(r = 5)),
         axis.title.y = element_text(size = 14, family = "Cabin", colour = "#555555",
-                                    margin = margin(r = 10)),
-        plot.margin = margin(10, 10, 10, 10))
+                                    margin = ggplot2::margin(r = 10)),
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 
@@ -532,28 +532,29 @@ adr %>%
                      expand = c(0.01, 0.01)) +
   scale_y_continuous(breaks = pretty_breaks(n = 6),
                      limits = c(1000, 6000)) +
-  labs(title = "Tourism income in the Canary Islands keeps breaking all-time records post-COVID",
-       subtitle = "Total tourism income has reached unprecedented levels in the years post-COVID. 
-       In 2024, for the first time ever, total income in the Canary Islands surpassed the €5,000 
+  labs(title = "Tourism revenue in the Canary Islands keeps breaking all-time records post-COVID",
+       subtitle = "Total tourism revenue has reached unprecedented levels in the years post-COVID. 
+       In 2024, for the first time ever, total revenue in the Canary Islands surpassed the €5,000 
        million mark. If this post-COVID trend continues, the €6,000 million mark could be exceeded 
        in 2025.",
        x = element_blank(),
-       y = "Total income (million €)",
+       y = "Total revenue (million €)",
        caption = "Data: Exceltur. | Made by Oliver Q.R.") +
   theme_minimal(base_family = "Poppins") +
   theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_line(colour = "grey97"),
+        #plot.title.position = "plot",
         plot.title = element_textbox_simple(colour = "#1c3d5a", face = "bold", size = 24,
-                                            margin = margin(b = 15)),
+                                            margin = ggplot2::margin(b = 5)),
         plot.subtitle = element_textbox_simple(colour = "#6d7b8d", size = 18,
-                                               margin = margin(t = 5, b = 20)),
+                                               margin = ggplot2::margin(t = 5, b = 20)),
         plot.caption = element_text(colour = "#6d7b8d", face = "italic", size = 10),
         axis.text = element_text(colour = "#999999", family = "Cabin", face = "bold", size = 12),
-        axis.text.x = element_text(margin = margin(t = 5)),
-        axis.text.y = element_text(margin = margin(r = 5)),
+        axis.text.x = element_text(margin = ggplot2::margin(t = 5)),
+        axis.text.y = element_text(margin = ggplot2::margin(r = 5)),
         axis.title.y = element_text(size = 14, family = "Cabin", colour = "#555555",
-                                    margin = margin(r = 10)),
-        plot.margin = margin(10, 10, 10, 10))
+                                    margin = ggplot2::margin(r = 10)),
+        plot.margin = ggplot2::margin(10, 10, 10, 10))
 
 
 
