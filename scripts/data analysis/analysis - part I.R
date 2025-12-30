@@ -12,12 +12,13 @@ library(htmltools)
 
 
 # importing data
-eu_nights_spent_23 <- read_csv("Data/eu_nights_spent_23.csv")
-tourists_can <- read_csv("Data/tourists_can.csv")
-tourists_by_island <- read_csv("Data/tour_by_island.csv")
-average_stay <- read_csv("Data/average_stay.csv")
-daily_exp <- read_csv("Data/average_expenditure_by_tour_day.csv")
-adr <- read_csv("Data/adr.csv")
+eu_nights_spent_23 <- read_csv("data/clean/eu_nights_spent_23.csv")
+tourists_can <- read_csv("data/clean/tourists_can.csv")
+tourists_by_island <- read_csv("data/clean/tour_by_island.csv")
+average_stay <- read_csv("data/clean/average_stay.csv")
+daily_exp <- read_csv("data/clean/average_expenditure_by_tour_day.csv")
+adr <- read_csv("data/clean/adr.csv")
+can_geo_map <- read_csv("data/clean/clean/can_geo_map.csv")
 
 
 
@@ -72,7 +73,7 @@ eu_nights_spent_23 %>%
 
 
 # Tourist arrivals per year
-tourists_can_2005_9 <- read_csv2("Data/yearly tourists Canary Islands 2005-9.csv")
+tourists_can_2005_9 <- read_csv2("data/clean/yearly tourists Canary Islands 2005-9.csv")
 
 tourists_can %>%
   filter(country == "Total",
@@ -223,27 +224,7 @@ tour_by_island_2024 %>%
 
 # Yearly tourist arrivals per island
 # Canary Islands map
-# downloading NUTS boundaries for the Canary Islands at the island level
-canary_islands_map <- gisco_get_nuts(resolution = "03",
-                                     country = "ES",
-                                     year = "2024",
-                                     nuts_level = "3") %>%
-  filter(NUTS_NAME %in% c("Lanzarote", "Fuerteventura", "Gran Canaria", "Tenerife",
-                          "La Gomera", "La Palma", "El Hierro"))
-
-
-can_map <- canary_islands_map %>%
-  filter(NUTS_NAME %in% c("La Gomera", "El Hierro")) %>%
-  reframe(NAME_LATN = "La Gomera & El Hierro",
-          CNTR_CODE = "ES",
-          NUTS_NAME = "La Gomera & El Hierro",
-          geometry = st_union(geometry)) %>%
-  bind_rows(canary_islands_map %>%
-              filter(!NUTS_NAME %in% c("La Gomera", "El Hierro"))) %>%
-  select(island = NAME_LATN, geometry)
-
-
-map <- can_map %>%
+map <- can_geo_map %>%
   ggplot() +
   geom_sf_interactive(aes(geometry = geometry, fill = island, data_id = island, tooltip = island)) +
   scale_fill_manual(values = c("Lanzarote" = "#d73027",

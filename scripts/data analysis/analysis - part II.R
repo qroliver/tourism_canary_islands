@@ -3,14 +3,14 @@ library(janitor)
 library(ggtext)
 
 
-gdp_impact <- read_csv("Data/gdp_impact_spa.csv")
-gdp_can <- read_csv("Data/gdp_can.csv")
-avg_salary <- read_csv("Data/avg_salary.csv")
-unemployment <- read_csv("Data/unemployment.csv")
-poverty <- read_csv("Data/poverty.csv")
-s80s20 <- read_csv("Data/s80s20.csv")
-inab_meal <- read_csv("Data/inab_meal.csv")
-mat_soc_depr <- read_csv("Data/mat_soc_depr.csv")
+gdp_impact <- read_csv("data/clean/gdp_impact_spa.csv")
+gdp_can <- read_csv("data/clean/gdp_can.csv")
+avg_salary <- read_csv("data/clean/avg_salary.csv")
+unemployment <- read_csv("data/clean/unemployment.csv")
+poverty <- read_csv("data/clean/poverty.csv")
+s80s20 <- read_csv("data/clean/s80s20.csv")
+inab_meal <- read_csv("data/clean/inab_meal.csv")
+mat_soc_depr <- read_csv("data/clean/mat_soc_depr.csv")
 
 
 # mapping vector for region names
