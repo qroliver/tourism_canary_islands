@@ -9,3 +9,12 @@ How many tourists arrive each year? Which are the most popular islands? How much
 This repository contains the R scripts I used to fetch, clean, and analyse the data, while the main conclusions can be read on the following blog posts: [part I](https://www.oliverqr.com/blog/tourism_canary_islands_part_1) and [part II](https://www.oliverqr.com/blog/tourism_canary_islands_part_2).
 
 And this is not the end – part III is on the way. Stay tuned!
+
+#### 🗂️ Project folder structure
+tourism_can_islands/
+├─ data/
+│  ├─ raw/
+│  ├─ clean/
+├─ scripts/
+│  ├─ data ETL/
+│  ├─ data analysis/
