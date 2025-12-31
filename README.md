@@ -11,10 +11,4 @@ This repository contains the R scripts I used to fetch, clean, and analyse the d
 And this is not the end – part III is on the way. Stay tuned!
 
 #### 🗂️ Project folder structure
-tourism_can_islands/
-├─ data/
-│  ├─ raw/
-│  ├─ clean/
-├─ scripts/
-│  ├─ data ETL/
-│  ├─ data analysis/
+<img width="558" height="382" alt="image" src="https://github.com/user-attachments/assets/95fe1b76-ae76-4ccb-aece-50150e0593b8" />
