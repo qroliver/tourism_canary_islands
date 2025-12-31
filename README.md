@@ -10,6 +10,8 @@ This repository contains the R scripts I used to fetch, clean, and analyse the d
 
 And this is not the end – part III is on the way. Stay tuned!
 
-<br><br><br>
-##### 🗂️ Project folder structure
+<br><br>
+##### 🗂️ Project folder structure[^*]
 <img width="250" height=auto alt="image" src="https://github.com/user-attachments/assets/64fd2b2a-c368-496a-a259-8738bfb6e388" />
+
+[^*]: Not all folders are shown in the repo.
