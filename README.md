@@ -10,7 +10,5 @@ This repository contains the R scripts I used to fetch, clean, and analyse the d
 
 And this is not the end – part III is on the way. Stay tuned!
 
-<div style='height:100px;'></div>
-
-#### 🗂️ Project folder structure
-<img width="275" height=auto alt="image" src="https://github.com/user-attachments/assets/95fe1b76-ae76-4ccb-aece-50150e0593b8" />
+<br><br>
+![Project folder structure](https://github.com/user-attachments/assets/95fe1b76-ae76-4ccb-aece-50150e0593b8)
